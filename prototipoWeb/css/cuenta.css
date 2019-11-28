@@ -1,0 +1,45 @@
+#general{
+    margin: 50px 100px;
+}
+
+.left{
+    width: 20%;
+    background-color: aquamarine;
+    display: block;
+    float: left;
+}
+
+.right{
+    width: 80%;
+    background-color: chartreuse;
+    display: block;
+    float: left;
+}
+
+.user-img img{
+    width: 150px;
+    height: 150px;
+}
+
+.menu li{
+    float: left;
+    margin: 0px 50px;
+    list-style: none;
+}
+
+.menu li a{
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 120px;
+}
+
+.gestion img{
+    width: 200px;
+    height: 200px;
+}
+
+footer{
+    background-color: gray;
+    display: block;
+}
