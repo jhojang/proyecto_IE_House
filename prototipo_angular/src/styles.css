@@ -1,7 +1,6 @@
 @import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
 
 body {
-    background-image: url("../src/assets/images/fondopag.jpg");
-    background-size: 100% 100%;
+    background-image: url("./assets/images/fondopag.jpg");
     background-attachment: fixed;
 }
