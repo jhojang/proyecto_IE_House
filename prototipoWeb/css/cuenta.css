@@ -25,7 +25,7 @@
     background-color: blue;
     padding: 20px 0px;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .menu{
@@ -52,9 +52,23 @@
 .gestion{
     background-color: blueviolet;
     margin: 10px;
+    text-align: center;
+    padding: 50px;
 }
+
+.content.img{
+    margin: auto;
+    background-color: aquamarine;
+}
+
 
 .gestion img{
     width: 340px;
     height: 180px;
+    margin: 10px;
+}
+
+footer{
+    clear: left;
+    background-color: blue;
 }
