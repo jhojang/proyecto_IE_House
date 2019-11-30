@@ -21,25 +21,40 @@
     height: 150px;
 }
 
+.nav{
+    background-color: blue;
+    padding: 20px 0px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.menu{
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+    display: flex;
+
+}
+
 .menu li{
     float: left;
-    margin: 0px 50px;
     list-style: none;
+    background-color: black;
+    margin: auto;
+    padding: 15px 60px;
+    border-radius: 25px;
 }
 
 .menu li a{
-    background-color: black;
     color: white;
-    padding: 10px 30px;
-    border-radius: 120px;
+}
+
+.gestion{
+    background-color: blueviolet;
+    margin: 10px;
 }
 
 .gestion img{
-    width: 200px;
-    height: 200px;
-}
-
-footer{
-    background-color: gray;
-    display: block;
+    width: 340px;
+    height: 180px;
 }
