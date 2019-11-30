@@ -1,19 +1,28 @@
+body{
+    background-image: url("../image/pag.png");
+}
+
 #general{
-    margin: 50px 100px;
+    margin: 30px 100px;
 }
 
 .left{
     width: 20%;
-    background-color: aquamarine;
     display: block;
     float: left;
 }
 
 .right{
     width: 80%;
-    background-color: chartreuse;
     display: block;
     float: left;
+}
+
+.user{
+    background-color: white;
+    margin: 10px 0px;
+    padding: 20px;
+    border: solid 1px rgb(204, 204, 204);
 }
 
 .user-img img{
@@ -22,10 +31,11 @@
 }
 
 .nav{
-    background-color: blue;
+    background-color: white;
     padding: 20px 0px;
     margin: 10px;
     border-radius: 5px;
+    border: solid 1px rgb(204, 204, 204);
 }
 
 .menu{
@@ -50,20 +60,20 @@
 }
 
 .gestion{
-    background-color: blueviolet;
+    background-color: white;
     margin: 10px;
     text-align: center;
     padding: 50px;
+    border: solid 1px rgb(204, 204, 204);
 }
 
 .content.img{
     margin: auto;
-    background-color: aquamarine;
 }
 
 
 .gestion img{
-    width: 340px;
+    width: 320px;
     height: 180px;
     margin: 10px;
 }
