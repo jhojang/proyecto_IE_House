@@ -1,31 +1,46 @@
 body{
-    background-image: url("../image/pag.png");
+    background-image: url("../image/pagBlue.png");
+    font: normal normal 11px Arial,Tahoma,Helvetica,FreeSans,sans-serif;
 }
 
 #general{
-    margin: 0px 100px;
+    margin: 30px 100px;
+    float: left;
 }
 
 .aside{
     width: 20%;
     display: block;
     float: left;
-    margin-top: 30px;
+    clear: left;
 }
 
 .right{
     width: 80%;
     display: block;
     float: left;
-    margin-top: 30px;
+}
+
+.logo-img img{
+    width: 150px;
+    height: 54px;
+    float: left;
+}
+
+.logo{
+    width: 100%;
+    background-color: white;
+    padding: 20px 40px;
+    float: left;
+    border-top: solid 10px #007bff;
+    box-shadow: 0px 5px 5px #646464;
 }
 
 .user{
-    background-color: #d3e8ff;
-    margin: 5px 0px;
+    background:linear-gradient(135grad,#278bf7,#5eabfd,#c3e0ff);
     padding: 20px;
-    opacity: .95;
-    box-shadow: 0px 0px 5px #ffffff;
+    opacity: .98;
+    box-shadow: 0px 1px 5px #646464;
 }
 
 .user-img img{
@@ -33,28 +48,45 @@ body{
     height: 150px;
 }
 
+.user-img{
+    margin-bottom: 10px;
+}
+
+.user p{
+    margin: 0;
+}
+
+.btn-cuenta img{
+    width: 120px;
+    height: auto;
+}
+
 .left{
     background-color: rgb(32, 32, 32);
     height: 300px;
-    box-shadow: 0px 0px 5px #000000;
+    box-shadow: 0px 5px 5px #646464;
+}
+
+.menu-content{
+    border-bottom: solid 10px white;
+    
+    box-shadow: 0px 2px 2px #646464;
 }
 
 .nav{
-    background-color: #d3e8ff;
-    opacity: .95;
-    margin: 5px;
-    box-shadow: 0px 0px 5px #dddddd;
-    border-bottom: solid 10px rgb(32, 32, 32);
+    background-color: rgb(32, 32, 32);
+    box-shadow: 0px 2px 5px #646464;
+    border-bottom: solid 10px #007bff;
     padding: 0;
     height: 64px;
 }
 
 .home{
-    background-color: rgb(32, 32, 32);;
+    background-color: #007bff;
     float: left;
     height: 70px;
     width: 10%;
-    margin: 0 0 0 15px;
+    margin: 0 15px 0 15px;
     position: relative;
     top: -8px;
     display: flex;
@@ -70,7 +102,6 @@ body{
 .menu{
     margin: 0;
     padding: 0%;
-    display: flex;
     width: 85%;
     height: 40px;
 }
@@ -79,59 +110,81 @@ body{
     float: left;
     list-style: none;
     margin: auto;
-    padding: 15px 60px;
+    padding: 15px 0px;
 }
 
 .menu li a{
-    color: rgb(0, 0, 0);
+    color: white;
+    text-transform: uppercase;
+    padding: 17px 60px;
+}
+
+.menu li a:hover{
+    background-color: #007bff;
+    text-decoration: none;
 }
 
 .gestion{
     background-color: white;
-    margin: 5px;
     text-align: center;
     padding: 50px;
+    box-shadow: 0px 5px 5px #646464;
+}
+
+.wellcome{
+    background-color: aquamarine;
 }
 
 .content.img{
     margin: auto;
 }
 
-.btn-1, .btn-2{
-    margin-top: 50px;
-}
-
 .gestion a{
-    background-color: #007bff;
     padding: 70px 70px;
-    margin: 20px;
+    margin: 18px;
+    position: relative;
 }
 
 #bombillo-icon{
     background-color: rgb(204, 0, 0);
 }
 
+#bombillo-icon:hover{
+    background-color: rgb(240, 2, 2);
+}
+
 #ray-icon{
     background-color: #47a0ff;
+}
+
+#ray-icon:hover{
+    background-color: #7fbcfd;
 }
 
 #controlpar-icon{
     background-color: #ffbf0e;
 }
 
+#controlpar-icon:hover{
+    background-color: #ffd151;
+}
+
 #config-icon{
     background-color: #02dd3c;
+}
+
+#config-icon:hover{
+    background-color: #24ff5e;
 }
 
 
 .gestion img{
     width: 100px;
     height: 100px;
-    margin: 20px;
+    margin: 50px 20px;
 }
 
 .lala{
-    background-color: #007bff;
     background-size: 100% 230%;
-    height: 380px;
+    height: 500px;
 }
