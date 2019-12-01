@@ -37,8 +37,8 @@ body{
 }
 
 .user{
-    background:linear-gradient(135grad,#278bf7,#5eabfd,#c3e0ff);
-    padding: 20px;
+    background:linear-gradient(135grad,#278bf7,#5eabfd,#8ab9eb);
+    padding: 25px 3px;
     opacity: .98;
     box-shadow: 0px 1px 5px #646464;
 }
@@ -52,13 +52,39 @@ body{
     margin-bottom: 10px;
 }
 
-.user p{
-    margin: 0;
+.user-legend{
+    margin: 20px;
 }
 
-.btn-cuenta img{
-    width: 120px;
-    height: auto;
+.user-legend p{
+    margin: 2px;
+}
+
+.user-legend h2{
+    font-size: 23px;
+}
+
+.icon-button{
+    background-color: #007bff;
+    color: white;
+    padding: 5px 8px;
+    margin: 0;
+    border-radius: 3px;
+}
+
+.btn-user{
+    background-color: #ffffff;
+    color: black;
+    padding: 5px 5px 5px 0;
+    font-size: 13px;
+    margin: 3px;
+    border-radius: 3px;
+}
+
+.btn-user:hover{
+    background-color: #007bff;
+    text-decoration: none;
+    color: white;
 }
 
 .left{
