@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="../css/principal.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/gestion_bombillos.css" rel="stylesheet" type="text/css"/>
     <title>Document</title>
 
 <!--JQUERY-->
@@ -19,7 +19,7 @@
 <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
 <!-- Nuestro css-->
-<!-- <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">-->
+<link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
 
 </head>
     <body>
@@ -51,7 +51,7 @@
             <div class="menu-content">
                 <div class="nav">
                     <div class="home">
-                        <div class="icon-home"><a href="#"><i class="fas fa-home"></i></a></div>
+                        <div class="icon-home"><a href="./principal.html"><i class="fas fa-home"></i></a></div>
                     </div>
                     <ul class="menu">
                         <li><a href="#">Acerca de</a></li>
@@ -61,14 +61,11 @@
                 </div>
             </div>
             <div class="gestion">
-                <!--<div class="wellcome">
-                    <h1>Bienvenido</h1>
-                </div>-->
                 <div class="content-img">
-                    <a href="./gestion_bombillos.html" id="bombillo-icon" title="GESTIONAR BOMBILLOS"><img src="../image/bombillo-icon.png"/></a>
-                    <a href="#" id="ray-icon" title="INFORME DE ENERGÍA"><img src="../image/bolt-cloud-stroke-symbol-lightning-bolt-ray-haw--23.png"/></a> 
-                    <a href="#" id="controlpar-icon" title="CONTROL PARENTAL"><img src="../image/controlpar-icon.png"/></a>
-                    <a href="#" id="config-icon" title="CONFIGURACIÓN"><img src="../image/config-icon.png"/></a>
+                    <button id="bombiRojo" onclick="cambioColorRojo()" title="GESTIONAR BOMBILLOS" class="a-btn a-btnRA"><img src="../image/plantilla-encendido-g.png" id="fotoRoja"/></button>
+                    <button id="bombiBlue" onclick="cambioColorBlue()"title="INFORME DE ENERGÍA" class="a-btn a-btnBA"><img src="../image/plantilla-encendido-g.png"/></button>
+                    <button id="controlpar-icon" title="CONTROL PARENTAL" class="a-btn"><img src="../image/plantilla-encendido-g.png"/></button>
+                    <button id="config-icon" title="CONFIGURACIÓN" class="a-btn"><img src="../image/plantilla-encendido-g.png"/></button>
                 </div>
             </div>
         </section>
@@ -77,4 +74,5 @@
     <div class="lala">
     </div>
     </body>
+    <script src="../javaScript/script.js"></script>
 </html>

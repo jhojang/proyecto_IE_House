@@ -119,6 +119,7 @@ body{
 }
 
 .home .icon-home{
+    color: #ffffff;
     opacity: .95;
     font-size: 40px;
     margin: auto;
@@ -162,61 +163,51 @@ body{
     background-color: white;
     text-align: center;
     padding: 50px;
-    
 }
 
 .wellcome{
     background-color: aquamarine;
 }
 
-.content.img{
-    margin: auto;
+.content-img{
+    margin: 0px 200px;
 }
 
-.gestion a{
-    padding: 70px 70px;
+.gestion .a-btn{
+    padding: 0px 30px;
     margin: 18px;
     position: relative;
+    border: none;
 }
 
-#bombillo-icon{
+.a-btnRA{
     background-color: rgb(204, 0, 0);
 }
-
-#bombillo-icon:hover{
-    background-color: rgb(240, 2, 2);
+.a-btnRE{
+    background-color: rgb(255, 1, 1);
 }
 
-#ray-icon{
+.a-btnBA{
     background-color: #47a0ff;
 }
-
-#ray-icon:hover{
-    background-color: #7fbcfd;
+.a-btnBE{
+    background-color: #85bffd;
 }
 
 #controlpar-icon{
     background-color: #ffbf0e;
 }
 
-#controlpar-icon:hover{
-    background-color: #ffd151;
-}
-
 #config-icon{
     background-color: #02dd3c;
 }
 
-#config-icon:hover{
-    background-color: #24ff5e;
-}
-
-
 .gestion img{
     width: 100px;
     height: 100px;
-    margin: 50px 20px;
+    margin: 30px 0;
 }
+
 
 .lala{
     background-size: 100% 230%;

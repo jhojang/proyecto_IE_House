@@ -18,8 +18,35 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
 <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
-<!-- Nuestro css-->
-<link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
+<!-- Nuestro css
+<link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">-->
+
+<!--#################################     INICIO FIREBASE      ####################################-->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD1T_eKeiR5XGQfTZi_K-ey6EMzKWHeYhc",
+    authDomain: "usuariosie-d0082.firebaseapp.com",
+    databaseURL: "https://usuariosie-d0082.firebaseio.com",
+    projectId: "usuariosie-d0082",
+    storageBucket: "usuariosie-d0082.appspot.com",
+    messagingSenderId: "935225917079",
+    appId: "1:935225917079:web:487bcb81eba9757e50b3d2",
+    measurementId: "G-MXN1ZJMK2N"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<!--#################################     FIN FIREBASE      ####################################-->
 
 </head>
 <body>
@@ -34,40 +61,40 @@
                             <div class="content">
                                 <form>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Usuario"/>
+                                        <input id="user" type="text" class="form-control" placeholder="Usuario"/>
                                         <div class="icon-form"><i class="fas fa-user"></i></div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Email"/>
+                                        <input id="email" type="email" class="form-control" placeholder="Email"/>
                                         <div class="icon-form"><i class="fas fa-envelope"></i></div>
                                     </div>
                                     <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Nombre"/>
+                                            <input id="name" type="text" class="form-control" placeholder="Nombre"/>
                                             <div class="icon-form"><i class="fas fa-pencil-alt"></i></div>
                                         </div>
-                                        <div class="form-group" id="contra-camp">
-                                            <input type="text" class="form-control" placeholder="Apellido"/>
+                                        <div class="form-group">
+                                            <input id="lastName" type="text" class="form-control" placeholder="Apellido"/>
                                             <div class="icon-form"><i class="fas fa-pencil-alt"></i></div>
                                         </div>
-                                        <div class="form-group" id="contra-camp">
-                                            <input type="password" class="form-control" placeholder="Contraseña"/>
+                                        <div class="form-group">
+                                            <input id="pass" type="password" class="form-control" placeholder="Contraseña"/>
                                             <div class="icon-form"><i class="fas fa-lock"></i></div>
                                         </div>
-                                        <div class="form-group" id="contra-camp">
-                                            <input type="password" class="form-control" placeholder="Confirmar contraseña"/>
+                                        <div class="form-group">
+                                            <input id="passConfirm" type="password" class="form-control" placeholder="Confirmar contraseña"/>
                                             <div class="icon-form"><i class="fas fa-lock"></i></div>
                                         </div>
                                         
-                                    <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
+                                    <button onclick="getDatos()" type="button" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
                                 </form>
                             </div>
                             <div class="registrarse">
-                            <div class="text-registro">¿Ya tienes cuenta?<a href="#">Inicia sesión</a></div>
+                            <div class="text-registro">¿Ya tienes cuenta?<a href="../index.html">Inicia sesión</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
+    <script src="../javaScript/script.js"></script>
 </body>
 </html>

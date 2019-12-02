@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/index.css" rel="stylesheet" type="text/css"/>
     <title>Document</title>
 
 <!--JQUERY-->
@@ -19,7 +19,34 @@
 <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
 <!-- Nuestro css-->
-<link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
+<!-- <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}"> -->
+
+<!--#################################     INICIO FIREBASE      ####################################-->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD1T_eKeiR5XGQfTZi_K-ey6EMzKWHeYhc",
+    authDomain: "usuariosie-d0082.firebaseapp.com",
+    databaseURL: "https://usuariosie-d0082.firebaseio.com",
+    projectId: "usuariosie-d0082",
+    storageBucket: "usuariosie-d0082.appspot.com",
+    messagingSenderId: "935225917079",
+    appId: "1:935225917079:web:487bcb81eba9757e50b3d2",
+    measurementId: "G-MXN1ZJMK2N"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<!--#################################     FIN FIREBASE      ####################################-->
 
 </head>
 <body>
@@ -37,26 +64,26 @@
                                 </div>    
                                 <form>
                                     <div class="form-group" id="user-camp">
-                                        <input type="text" class="form-control" placeholder="Usuario"/>
-                                        <div class="icon-form"><i class="fas fa-user"></i></div>
+                                        <input id="email" type="email" class="form-control" placeholder="Email"/>
+                                        <div class="icon-form"><i class="fas fa-envelope"></i></div>
                                     </div>
                                     <div class="form-group" id="contra-camp">
-                                        <input type="password" class="form-control" placeholder="Contraseña"/>
+                                        <input id="password" type="password" class="form-control" placeholder="Contraseña"/>
                                         <div class="icon-form"><i class="fas fa-lock"></i></div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
+                                    <button onclick="ingresar()" type="button" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
                                 </form>
                                 <div class="forgot-pass">
                                     <a href="#">Recuperar contraseña</a>
                                 </div>
                             </div>
                             <div class="registrarse">
-                            <div class="text-registro">¿No tienes cuenta?<a href="#">Registrate</a></div>
+                            <div class="text-registro">¿No tienes cuenta?<a href="./html/registro.html">Registrate</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
+    <script src="./javaScript/script.js"></script>
 </body>
 </html>
