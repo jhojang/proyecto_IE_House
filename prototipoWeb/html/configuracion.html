@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="../css/gestion_bombillos.css" rel="stylesheet" type="text/css"/>
-    <title>Document</title>
+    <link href="../css/configuracion.css" rel="stylesheet" type="text/css"/>
+    <title>CONFIGURACIÓN</title>
 
 <!--JQUERY-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -68,10 +68,34 @@
             </div>
             <div class="gestion">
                 <div class="content-img">
-                    <button id="bombiRojo" onclick="cambioColorRojo()" title="GESTIONAR BOMBILLOS" class="a-btn a-btnRA"><img src="../image/plantilla-encendido-g.png" id="fotoRoja"/></button>
-                    <button id="bombiBlue" onclick="cambioColorBlue()"title="INFORME DE ENERGÍA" class="a-btn a-btnBA"><img src="../image/plantilla-encendido-g.png"/></button>
-                    <button id="controlpar-icon" title="CONTROL PARENTAL" class="a-btn"><img src="../image/plantilla-encendido-g.png"/></button>
-                    <button id="config-icon" title="CONFIGURACIÓN" class="a-btn"><img src="../image/plantilla-encendido-g.png"/></button>
+                    <button id="bombiRojo" onclick="cambioColorRojo()" title="GESTIONAR BOMBILLOS" class="a-btn a-btnRA"><img src="../image/user-iniciosesion.png"id="fotoRoja"/><br><H5>NOMBRE</H5></button>
+                    <form>
+                            <div class="form-group">
+                                <input id="user" type="text" class="form-control" placeholder="Cambiar Nombre de Usuario"/>
+                                <div class="icon-form"><i class="fas fa-user"></i></div>
+                            </div>
+                            <div class="form-group">
+                                    <input id="name" type="text" class="form-control" placeholder=" Contraseña Actual"/>
+                                    <div class="icon-form"><i class="fas fa-pencil-alt"></i></div>
+                                </div>
+                            <div class="form-group">
+                                    <input id="name" type="text" class="form-control" placeholder=" Nueva Contraseña"/>
+                                    <div class="icon-form"><i class="fas fa-pencil-alt"></i></div>
+                                </div>
+                                <div class="form-group">
+                                    <input id="lastName" type="text" class="form-control" placeholder="Repetir Nueva Contraseña"/>
+                                    <div class="icon-form"><i class="fas fa-pencil-alt"></i></div>
+                                </div>
+                                <div class="form-group">
+                                        <input id="email" type="email" class="form-control" placeholder="Cambiar Email"/>
+                                        <div class="icon-form"><i class="fas fa-envelope"></i></div>
+                                    </div>
+                                
+                                </div>
+                                
+                            <button onclick="getDatos()" type="button" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Enviar</button>
+                        </form>
+                    
                 </div>
             </div>
         </section>

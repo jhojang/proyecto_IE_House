@@ -3,6 +3,33 @@ body{
     font: normal normal 11px Arial,Tahoma,Helvetica,FreeSans,sans-serif;
 }
 
+.menuLeft{
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+    height: 40px;
+}
+
+.menuLeft li{
+    float: left;
+    list-style: none;
+    width: 100%;
+    margin: auto;
+    padding: 10px 0px;
+    border-bottom: solid 1px gray;
+}
+
+
+.menuLeft li a{
+    color: white;
+    width: 100%;
+    padding: 12px 70px 12px 20px;
+}
+
+.menuLeft li a:hover{
+    text-decoration: none;
+}
+
 #general{
     margin: 30px 100px;
     float: left;
@@ -119,7 +146,6 @@ body{
 }
 
 .home .icon-home{
-    color: #ffffff;
     opacity: .95;
     font-size: 40px;
     margin: auto;
@@ -132,33 +158,6 @@ body{
 
 .home .icon-home a:hover{
     color: white;
-}
-
-.menuLeft{
-    margin: 0;
-    padding: 0%;
-    width: 100%;
-    height: 40px;
-}
-
-.menuLeft li{
-    float: left;
-    list-style: none;
-    width: 100%;
-    margin: auto;
-    padding: 10px 0px;
-    border-bottom: solid 1px gray;
-}
-
-
-.menuLeft li a{
-    color: white;
-    width: 100%;
-    padding: 12px 70px 12px 20px;
-}
-
-.menuLeft li a:hover{
-    text-decoration: none;
 }
 
 .menu{
@@ -190,51 +189,61 @@ body{
     background-color: white;
     text-align: center;
     padding: 50px;
+    
 }
 
 .wellcome{
     background-color: aquamarine;
 }
 
-.content-img{
-    margin: 0px 200px;
+.content.img{
+    margin: auto;
 }
 
-.gestion .a-btn{
-    padding: 0px 30px;
+.gestion a{
+    padding: 70px 70px;
     margin: 18px;
     position: relative;
-    border: none;
 }
 
-.a-btnRA{
+#bombillo-icon{
     background-color: rgb(204, 0, 0);
 }
-.a-btnRE{
-    background-color: rgb(255, 1, 1);
+
+#bombillo-icon:hover{
+    background-color: rgb(240, 2, 2);
 }
 
-.a-btnBA{
+#ray-icon{
     background-color: #47a0ff;
 }
-.a-btnBE{
-    background-color: #85bffd;
+
+#ray-icon:hover{
+    background-color: #7fbcfd;
 }
 
 #controlpar-icon{
     background-color: #ffbf0e;
 }
 
+#controlpar-icon:hover{
+    background-color: #ffd151;
+}
+
 #config-icon{
     background-color: #02dd3c;
 }
 
+#config-icon:hover{
+    background-color: #24ff5e;
+}
+
+
 .gestion img{
     width: 100px;
     height: 100px;
-    margin: 30px 0;
+    margin: 50px 20px;
 }
-
 
 .lala{
     background-size: 100% 230%;

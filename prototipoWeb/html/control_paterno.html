@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="../css/principal.css" rel="stylesheet" type="text/css"/>
-    <title>Inicio</title>
+    <link href="../css/control_paterno.css" rel="stylesheet" type="text/css"/>
+    <title>CONTROL PATERNO</title>
 
 <!--JQUERY-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -19,7 +19,7 @@
 <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
 <!-- Nuestro css-->
-<!-- <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">-->
+<link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
 
 </head>
     <body>
@@ -45,13 +45,19 @@
                 </div>
             </div>
             <div class="left">
+                    <ul class="menuLeft">
+                        <li><a href="./gestion_bombillos.html">Gestión Bombillos</a></li>
+                        <li><a href="./estadisticas.html">Informe de energía</a></li>
+                        <li><a href="./control_paterno.html">Control Parental</a></li>
+                        <li><a href="./configuracion.html">Configuracion</a></li>
+                    </ul>
             </div>
         </section>
         <section class="right">
             <div class="menu-content">
                 <div class="nav">
                     <div class="home">
-                        <div class="icon-home"><a href="#"><i class="fas fa-home"></i></a></div>
+                        <div class="icon-home"><a href="./principal.html"><i class="fas fa-home"></i></a></div>
                     </div>
                     <ul class="menu">
                             <li><a href="./horario.html">HORARIOS</a></li>
@@ -61,14 +67,11 @@
                 </div>
             </div>
             <div class="gestion">
-                <!--<div class="wellcome">
-                    <h1>Bienvenido</h1>
-                </div>-->
                 <div class="content-img">
-                    <a href="./gestion_bombillos.html" id="bombillo-icon" title="GESTIONAR BOMBILLOS"><img src="../image/bombillo-icon.png"/></a>
-                    <a href="./estadisticas.html" id="ray-icon" title="INFORME DE ENERGÍA"><img src="../image/bolt-cloud-stroke-symbol-lightning-bolt-ray-haw--23.png"/></a> 
-                    <a href="./control_paterno.html" id="controlpar-icon" title="CONTROL PARENTAL"><img src="../image/controlpar-icon.png"/></a>
-                    <a href="./configuracion.html" id="config-icon" title="CONFIGURACIÓN"><img src="../image/config-icon.png"/></a>
+                    <button id="bombiRojo" onclick="cambioColorRojo()" title="GESTIONAR BOMBILLOS" class="a-btn a-btnRA"><img src="../image/user-iniciosesion.png" id="fotoRoja"/><br>NOMBRE</button>
+                    <button id="bombiBlue" onclick="cambioColorBlue()"title="INFORME DE ENERGÍA" class="a-btn a-btnBA"><img src="../image/user-iniciosesion.png"/><br>NOMBRE</button>
+                    <button id="controlpar-icon" title="CONTROL PARENTAL" class="a-btn"><img src="../image/user-iniciosesion.png"/><br>NOMBRE</button>
+                    <button id="config-icon" title="CONFIGURACIÓN" class="a-btn"><img src="../image/user-iniciosesion.png"/><br>NOMBRE</button>
                 </div>
             </div>
         </section>
@@ -77,4 +80,5 @@
     <div class="lala">
     </div>
     </body>
+    <script src="../javaScript/script.js"></script>
 </html>

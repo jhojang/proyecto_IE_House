@@ -47,7 +47,7 @@ function ingresar(){
     firebase.auth().signInWithEmailAndPassword(email, password)
     .then(function(result) {
         // Handle Errors here.
-        window.location.href = "C:/Users/Jhojan/Desktop/proyectoIeHouse/proyecto_IE_House/prototipoWeb/html/principal.html";
+        window.location.href = "./html/principal.html";
         // ...
       })
     
