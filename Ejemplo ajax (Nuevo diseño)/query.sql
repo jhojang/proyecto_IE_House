@@ -1,0 +1,1 @@
+INSERT INTO user (nombre_user, passwrod_user, correo_user) VALUES ("Edward", "sgfgdfg", "edward@");

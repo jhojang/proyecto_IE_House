@@ -1,0 +1,388 @@
+* {
+    font-family: Ubuntu, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #4d68dd 0%, #1013d8 100%);
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor {
+    background: linear-gradient(180deg, transparent 48%, white 39%);
+    display: grid;
+    width: 100%;
+    margin: 0;
+    grid: 80px auto 100px / repeat(5, 19%) 3%;
+}
+
+header {
+    grid-column: 2 / 7;
+    display: flex;
+    align-items: center;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+header ul li a {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+header ul li a:hover {
+    opacity: 1;
+}
+
+main {
+    background-color: white;
+    grid-column: 2 / 7;
+    grid-row: 2 / 4;
+    border-radius: 5px;
+    box-shadow: 0 0 3px gray;
+    padding: 30px;
+    display: grid;
+    grid: 0 / 75% 25%;
+}
+
+h1 {
+    font-size: 15px;
+    margin: 3px 0;
+    color: rgb(168, 168, 168);
+}
+
+main h2 {
+    margin: 0;
+}
+
+.sidebar {
+    background-color: transparent;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside_content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.aside_content div {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.aside_content .hud {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 15%;
+}
+
+.logo {
+    position: relative;
+    top: -18px;
+    height: 60px;
+}
+
+.user_img {
+    width: auto;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.hud {
+    background-color: transparent;
+    min-height: 300px;
+}
+
+.hud h2 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.hud .hr {
+    width: 40%;
+    max-height: 1.5px;
+    border-radius: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.menu_aside {
+    background-color: aliceblue;
+    padding: 50px 0;
+    margin: 0;
+    
+}
+
+.menu_aside .hr {
+    width: 100%;
+    max-height: 1.5px;
+    border-radius: 3px;
+    background: linear-gradient(135deg, #000000 0%, rgb(43, 43, 43) 100%);
+}
+
+.lista_menu {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.lista_menu li {
+    list-style: none;
+    margin: 0;
+    
+}
+
+.lista_menu li a {
+    color: rgb(100, 100, 100);
+    text-decoration: none;
+    padding: 15px 30px;
+    display: block;
+    font-size: 15px;
+    
+}
+
+.lista_menu li a:hover {
+    color: #000000;
+}
+
+.lista_menu li .active {
+    background: linear-gradient(135deg, #4d68dd 0%, #4c4ed6 100%);
+    color: white;
+    border-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.lista_menu li .active:hover {
+    color: white;
+}
+
+.bombillos_content {
+    border-right: 1px solid rgb(228, 228, 228);
+}
+
+.bombillos_content .rooms {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.bombillos_content .rooms ul {
+    display: flex;
+    padding: 0;
+}
+
+.bombillos_content .rooms ul li {
+    list-style: none;
+    margin: 0;
+    margin-right: 50px;
+}
+
+.bombillos_content .rooms ul li a {
+    margin: 0;
+    padding: 5px 0;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.bombillos_content .rooms ul li .active {
+    border-bottom: 2px solid blue;
+    
+}
+
+.bombillos_content .rooms #form_rooms {
+    padding: 0;
+    margin: 0;
+}
+
+.bombillos_content .rooms .form_rooms_visible {
+    display: none;
+}
+
+#form_rooms input[type="text"]{
+    border: none;
+    border-bottom: 2px solid blue;
+    padding: 6px 3px;
+    width: 150px;
+    outline: none;
+}
+
+#form_rooms input[type="submit"]{
+    border: 2px solid blue;
+    background-color: blue;
+    padding: 6px 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.bombillos_content .rooms .agregar_cuarto {
+    text-decoration: none;
+    background-color: rgb(43, 46, 255);
+    padding: 2px 8px 4px 8px;
+    color: white;
+    border-radius: 50%;
+    
+}
+
+/*PARA CAMBIAR MAÑANA:*/
+
+.bombillos ul li{
+    list-style: none;
+}
+
+.botonBombillo {
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 40px 30px 40px;
+    margin: 0 40px 40px 0;
+    font-size: 50px;
+    box-shadow: 0 0 5px gray;
+    color: gray;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bombillos .botonBombillo span{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.bombillos .botonBombillo div{
+    text-align: center;
+    margin-left: 10px;
+}
+
+.bombillos_content .bombillos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.bombillos_content .bombillos ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.bombillos_content .agregar_bombillo {
+    background-color: rgb(57, 77, 255);
+    color: white;
+    border-radius: 50%;
+    box-shadow: none;
+    padding: 15px 30px;
+}
+
+.botonBombilloActivo {
+    box-shadow: 0 0 10px rgb(49, 46, 231);
+    color: rgb(42, 38, 248);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 300px;
+    height: 100vh;
+    box-shadow: 0 0 20px gray;
+    transition: transform 0.8s;
+    padding: 30px;
+    transform: translateX(150%);
+}
+
+.modal_cerrar {
+    /*transform: translateX(150%);*/
+}
+
+.modal .boton_cerrar_modal {
+    background-color: rgb(245, 48, 140);
+    padding: 5px 9px;
+    text-decoration: none;
+    border-radius: 100%;
+    color: white;
+}
+
+.nuevo_bombillo {
+    display: none;
+}
+
+.nuevo_bombillo img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.nuevo_bombillo form {
+    display: flex;
+    flex-direction: column;
+}
+
+.nuevo_bombillo form input,
+.nuevo_bombillo form select {
+    padding: 10px;
+}
+
+.nuevo_bombillo input[type="text"] {
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 3px solid blue;
+    outline: none;
+}
+
+.nuevo_bombillo input[type="submit"] {
+    border: none;
+    background-color: rgb(55, 55, 255);
+    color: white;
+    cursor: pointer;
+}
+
+/*form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    width: 300px;
+    padding: 20px;
+    border-top: 5px solid blue;
+    box-shadow: 0 0 3px gray;
+}
+
+form input {
+    margin-bottom: 20px;
+    padding: 10px 5px;
+}
+
+form input[type="submit"] {
+    background-color: blue;
+    border: none;
+    color: white;
+    cursor: pointer;
+}*/
+
+

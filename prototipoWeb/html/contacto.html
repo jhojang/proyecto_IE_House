@@ -73,32 +73,27 @@
                 <div class="content-img">
                     </div>
                     <div class="content">
-                        <form>
-                            <div class="form-group">
-                                <input id="user" type="text" class="form-control" placeholder="Usuario"/>
-                                <div class="icon-form"><i class="fas fa-user"></i></div>
-                            </div>
-                            <div class="form-group">
-                                <input id="email" type="email" class="form-control" placeholder="Email"/>
-                                <div class="icon-form"><i class="fas fa-envelope"></i></div>
-                            </div>
-                            <div class="form-group">
-                                    <input id="name" type="text" class="form-control" placeholder="Nombre"/>
-                                    <div class="icon-form"><i class="fas fa-pencil-alt"></i></div>
+                        <div class="general-form">
+                            <div class="form-title"><p>Contacto</p></div>
+                            <form>
+                                <div class="grupo-form">
+                                    <div class="contact-icon"><div class="icon-form"><i class="fas fa-user"></i></div></div>
+                                    <input id="user" type="text" class="input-camp" placeholder="Nombre"/>
                                 </div>
-                                <div class="form-group">
-                                    <input id="lastName" type="text" class="form-control" placeholder="Apellido"/>
-                                    <div class="icon-form"><i class="fas fa-pencil-alt"></i></div>
+                                <div class="grupo-form">
+                                    <div class="contact-icon"><div class="icon-form"><i class="fas fa-envelope"></i></div></div>
+                                    <input id="email" type="email" class="input-camp" placeholder="Email"/>
                                 </div>
-                                <div class="form-group">
-                                        <input id="lastName" type="text" class="form-control" placeholder="Recomendaciones"/>
-                                        <div class="icon-form"><i class="fas fa-pencil-alt"></i></div>
-                                    </div>
-                                
+                                <div class="grupo-form">
+                                    <div class="contact-icon"><div class="icon-form"><i class="fas fa-pencil-alt"></i></div></div>
+                                    <textarea name="mensaje" id="mensaje" class="input-camp" placeholder="Mensaje"></textarea>
                                 </div>
-                                
-                            <button onclick="getDatos()" type="button" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Enviar</button>
-                        </form>
+                                <div class="warning success">Envaido correctamente</div>
+                                <div class="warning error">Error al enviar</div>
+                                <input type="input" class="btn btn-primary boton-enviar" value="Enviar mensaje"></input>
+                            </form>
+                        </div>
+                    </div>
                 </section>
         </div>
     <div class="lala">

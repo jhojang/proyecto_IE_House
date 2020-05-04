@@ -249,3 +249,81 @@ body{
     background-size: 100% 230%;
     height: 500px;
 }
+
+.general-form {
+    margin: 0 auto;
+    max-width: 600px;
+    box-shadow: 0 0 3px gray;
+}
+
+form {
+    padding: 30px;
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+
+.form-title {
+    padding: 10px 20px;
+    background-color: #007bff;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.form-title p {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.grupo-form {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #9ecdff;
+    border-radius: 5px;
+}
+
+.contact-icon {
+    flex: 1 0 10%;
+    background-color: #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.input-camp {
+    padding: 10px;
+    border: 0px;
+    flex: 1 0 90%;
+}
+
+form textarea {
+    max-height: 300px;
+    min-height: 150px;
+}
+
+.boton-enviar {
+    display: block;
+    width: 100%;
+}
+
+.warning {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.success {
+    border: 2px solid #00bb1f;
+    color: #00bb1f;
+    background: #cffad6;
+}
+
+.error {
+    border: 2px solid red;
+    color: red;
+    background: rgb(253, 218, 218);
+}
+
